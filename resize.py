@@ -1,6 +1,6 @@
 import os
 import glob
-from PIL import Image
+from pillow import Image
 
 files = glob.glob('/kqi/input/**/**.png', recursive=True)
 
