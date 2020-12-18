@@ -126,7 +126,7 @@ if __name__ == "__main__":
     # コマンドライン引数の設定
     parser = argparse.ArgumentParser(description='aqualium demo file')
     parser.add_argument('running_parten', type=str, help='both | train | preprocess')
-    parser.add_argument('--input_path', default='/kqi/input')
+    parser.add_argument('--input_path', default='/kqi/input/65')
     parser.add_argument('--output_path', default='/kqi/output/demo')
     parser.add_argument('--preprocessed_data_path', default='/kqi/output/preprocessed_data')
     parser.add_argument('--log_path', default='/kqi/output')
