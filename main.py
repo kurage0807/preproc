@@ -42,7 +42,7 @@ def preprocess(args):
     # preprocessing for train data
     for idx in tqdm(range(df_train.shape[0])):
         file_name = df_train["image_id"][idx]
-        file_path = glob.glob(f"{args.input_path}/*/{file_name}.jpg")[0]
+        file_path = glob.glob(f"{args.input_path}/{file_name}.jpg")[0]
         img = imread(file_path)
         img = resize(img, (400, 400))
         imsave(f"{args.preprocessed_data_path}/{file_name}.png", img, check_contrast=False)
